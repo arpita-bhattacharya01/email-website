@@ -1,0 +1,36 @@
+{
+     "extends": "./tsconfig.json",
+   "compilerOptions": {
+     "composite": true,
+     "target": "esnext",
+     "module": "esnext",
+    // "target": "ES2022",
+     "lib": ["ES2023"],
+    // "module": "CommonJS",
+     "skipLibCheck": true,
+     "outDir": "dist",
+ "allowSyntheticDefaultImports": true,
+ "esModuleInterop": true,
+     /* Bundler mode */
+     "moduleResolution": "node",
+     "allowImportingTsExtensions": true,
+     "isolatedModules": true,
+     "moduleDetection": "force",
+     //"noEmit": true,
+     "noEmit": false,
+ "declaration": true,
+     "declarationMap": true,
+     "sourceMap": true,
+     /* Linting */
+     "strict": true,
+     "noUnusedLocals": true,
+     "noUnusedParameters": true,
+     "noFallthroughCasesInSwitch": true,
+     "types": ["node", "vite"]
+   },
+  
+   //   "include": ["vite.config.ts", "scripts/**/*"],
+   // "exclude": ["node_modules"]
+   "include": ["vite.config.ts", "src/**/*.node.ts"],
+   "exclude": ["node_modules", "dist"]
+}
